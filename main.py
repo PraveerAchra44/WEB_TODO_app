@@ -18,11 +18,11 @@ st.write("this application helps you to manage your day to day task and improve 
 st.divider()
 
 for index, todo in enumerate(todos):
-    checkbox = st.checkbox(todo, key=todo)
+    checkbox = st.checkbox(todo, key=index)
     if checkbox:
         todos.pop(index)
         write_todos(todos)
-        del st.session_state[todo]
+        del st.session_state[index]
         st.experimental_rerun()
 
 
