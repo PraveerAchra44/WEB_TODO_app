@@ -5,6 +5,7 @@ def get_todos(filepath='todos.txt'):
     return todos_local
 
 
+
 def write_todos(todos_local, filepath='todos.txt'):
     """WRITE THE TO-DO ITEMS LIST IN THE TEXT FILE."""
     with open(filepath, 'w') as file_local:
